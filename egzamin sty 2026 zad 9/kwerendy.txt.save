@@ -1,4 +1,0 @@
-1. select imie, kolor, cena from klienci where topKlient=1;
-2. select imie, cena from klienci where termin LIKE '2024-05-23%';
-3. select imie, kolor, ksztalty.ksztalt from klienci join ksztalty on klienci.ksztalty_id=ksztalty.id where ksztalty.ksztalt='migdał';
-4. alter table wzory add column dopłata int
