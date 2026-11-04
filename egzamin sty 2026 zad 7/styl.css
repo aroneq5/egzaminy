@@ -1,0 +1,48 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+header{
+    background-color: #388E3c;
+    color: white;
+    height: 100px;
+    float: left;
+}
+#pierwszy{
+    width: 20%;
+}
+#drugi{
+    width: 80%;
+}
+section{
+    background-color: #DCE775;
+    width: 50%;
+    height: 600px;
+    float: left;
+}
+footer{
+    background-color: #388E3c;
+    clear: both;
+}
+table{
+    width: 80%;
+    margin: auto;
+    border: 2px dashed #388E3c;
+}
+/* obrazy w tabeli wysokosc 70px */
+a{
+    color: #388E3c;
+    margin: 20px;
+    font-style: italic;
+    font-size: 200%;
+}
+a:hover{
+    background-color: #388E3c;
+    color: #DCE775;
+}
+p{
+    padding: 0px;
+}
+#fota{
+    height: 70px;
+}
