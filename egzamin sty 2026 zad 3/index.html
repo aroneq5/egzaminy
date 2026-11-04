@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola figur</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Pola figur płaskich</h2>
+    </header>
+    <main>
+        <nav>
+            <h3>MENU</h3>
+            <li>
+                <ul><a href="index.html">Prostokąt i trójkąt</a></ul>
+                <ul><a href="kolo.html">Okrąg i koło</a></ul>
+            </li>
+        </nav>
+        <section>
+            <img src="pliki2/1d.bmp" alt="Figura" id="duzy"> <br>
+            <img src="pliki2/1m.bmp" alt="Wybierz trójkąt" onclick="skrypt1('pliki2/1d.bmp')" class="zdjecie">
+            <img src="pliki2/2m.bmp" alt="Wybierz prostokąt" onclick="skrypt1('pliki2/2d.bmp')" class="zdjecie">
+        </section>
+        <aside>
+            <h3>Pole prostokąta / pole trójkąta</h3> <br>
+            <label for="bok">Bok prostokąta / Podstawa trójkąta</label> <br>
+            <input type="number" name="bok" id="bok"> <br>
+            <label for="bok2">Drugi bok prostokąta / wysokość trójkąta</label> <br>
+            <input type="number" name="bok2" id="bok2">
+            <button onclick="skrypt2()">oblicz</button> <br>
+            <p id="wynik"></p>
+        </aside>
+    </main>
+    <footer>
+        Autor: 57193571950
+    </footer>
+    <script>
+        function skrypt1(trojkat) {
+            document.getElementById('duzy').src = trojkat;
+        }
+        function skrypt2(){
+            var a = document.getElementById('bok').value;
+            var b = document.getElementById('bok2').value;
+            var obraz = document.getElementById('duzy').src;
+            var wynik;
+
+            if (obraz.includes("pliki2/2d.bmp")){
+                wynik = a*b;
+            }else{
+                wynik = a*b/2;
+            }
+            document.getElementById('wynik').innerHTML = "Pole: " +wynik;
+        }
+    </script>
+</body>
+</html>

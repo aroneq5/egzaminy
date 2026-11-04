@@ -1,0 +1,5 @@
+1. select id, imie, nazwisko from maturzysta where szkola="T3" order by nazwisko ASC;
+2. select DISTINCT przedmiot from arkusz;
+3. select MIN(rok) as najstarszy, MAX(rok) as najmlodszy from arkusz
+4. select maturzysta_id, avg(punkty) AS Wynik from wynik group by maturzysta_id order by punkty DESC LIMIT 1; 
+5. select arkusz.rok, arkusz.sesja, arkusz.przedmiot, wynik.punkty from arkusz JOIN wynik ON arkusz.symbol = wynik.symbol WHERE wynik.maturzysta_id = 31;
