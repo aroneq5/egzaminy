@@ -1,0 +1,4 @@
+1. select nazwa, plik from towar limit 10;
+2. select id, nazwa from towar;
+3. select rodzaj, nazwa, cena from towar where id=1;
+4. INSERT into zamowienie (id_towar, id_sklep, liczba_kg) VALUES (9,2,20);

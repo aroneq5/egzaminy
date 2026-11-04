@@ -1,0 +1,30 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header, footer{
+    background-color: forestgreen;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+nav{
+    background-color: darkkhaki;
+    height: 150px;
+    overflow: hidden;
+}
+aside, section{
+    background-color: khaki;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+img{
+    padding: 2px;
+    margin: 10px;
+    border: 2px dotted forestgreen;
+    border-radius: 40px;
+}
+p{
+    font-size: 120%;
+    text-decoration: italic;
+}
