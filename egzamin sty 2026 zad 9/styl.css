@@ -1,0 +1,53 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+aside{
+    width: 20%;
+    float: left;
+}
+aside img{
+    width: 100%;
+}
+main{
+    width: 80%;
+}
+nav{
+    text-align: left;
+    margin-left: 10%;
+}
+section{
+    background-color: salmon;
+    margin-left: 10%;
+    padding: 10px;
+    height: 250px;
+}
+#jeden{
+    display: block;
+}
+#dwa, #trzy{
+    display: none;
+}
+button{
+    width: 26%;
+    color: white;
+    border: none;
+    font-size: 200%;
+}
+button:nth-child(1){
+    background-color: salmon;
+}
+button:nth-child(2){
+    background-color: crimson;
+}
+button:nth-child(3){
+    background-color: crimson;
+}
+.wzory{
+    width: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}

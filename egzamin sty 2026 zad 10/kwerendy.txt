@@ -1,0 +1,4 @@
+1. select nazwa, trudnosc, kalorie from potrawy where IdPotrawy=7;
+2. select potrawy.nazwa, rodzaje.rodzaj from potrawy join rodzaje on potrawy.idRodzaje=rodzaje.idRodzaje where potrawy.idPotrawy=7;
+3. select potrawy.nazwa, alergeny.alergen from potrawy join lista_alergenow on potrawy.idPotrawy=lista_alergenow.idPotrawy join alergeny on lista_alergenow.idAlergeny=alergeny.idAlergeny where potrawy.idPotrawy=7;
+4. select przepis, plik from potrawy where idPotrawy=7;

@@ -1,0 +1,5 @@
+1. select id_filmu, tytul, rok_produkcji, czas_trwania from filmy where czas_trwania>100;
+2. select imie, nazwisko, plik_awatara from aktorzy where id_aktora=3;
+3. select id_aktora, imie, nazwisko, ocena, plik_awatara from aktorzy order by nazwisko, imie asc;
+4. select filmy.id_filmu, filmy.tytul, filmy.rok_produkcji from filmy join filmy_aktorzy on filmy_aktorzy.id_filmu=filmy.id_filmu where filmy_aktorzy.id_aktora=3;
+5. SELECT id_aktora, COUNT(id_filmu) AS liczba_filmow FROM filmy_aktorzy GROUP BY id_aktora; 
