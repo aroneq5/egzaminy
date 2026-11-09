@@ -1,0 +1,4 @@
+1. select marka, model, cena from pojazdy where marka='BM' order by cena desc limit 15;
+2. select avg(cena) as "Średnia cena", MAX(cena) as "Maksymalna cena" from pojazdy where model='meta';
+3. select pojazdy.marka, pojazdy.model, kolory.nazwa, kolory.doplata from pojazdy join kolory on kolory.id = pojazdy.kolor where pojazdy.model='alfa';
+4. SELECT marka, model, cena FROM pojazdy ORDER BY RAND() LIMIT 2;

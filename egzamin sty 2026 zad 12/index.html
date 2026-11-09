@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatuaże</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <header id="pierwszy">
+        <img src="pliki16/pliki16/logo.png" alt="salon">
+    </header>
+    <header id="drugi">
+        <h1>Studio Tatuażu</h1>
+    </header>
+    <section>
+        <h2>Galeria</h2>
+        <img src="pliki16/pliki16/smok.png" alt="smok.png" class="miniatury">
+        <img src="pliki16/pliki16/koliber.png" alt="koliber.png" class="miniatury">
+    </section>
+    <aside>
+        <h3>Dodaj wzór</h3>
+        <label for="plik">Wzór:</label> <br>
+        <input type="file" name="plik" id="plik" accept="image/png"> <br>
+        <label for="kolory">Kolor:</label> <br>
+        <select name="kolory" id="kolory">
+            <option value="czarny">Czarny</option>
+            <option value="czerwony">Czerwony</option>
+            <option value="zielony">Zielony</option>
+            <option value="niebieski">Niebieski</option>
+        </select> <br>
+        <label for="cena">Cena:</label> <br>
+        <input type="number" name="cena" id="cena"> <br>
+        <button id="guzior" onclick="dodajwzor()">Dodaj wzór</button>
+    </aside>
+
+    <footer>
+        Autor strony: 1239712389
+    </footer>
+</body>
+<script>
+    function dodajwzor(){
+        var plik = document.getElementById('plik').value
+        var kolor = document.getElementById('kolory').value
+        var cena = document.getElementById('cena').value
+
+        var nazwapliku = plik.split("\\").pop()
+
+        alert("Wzór: " + nazwapliku + ", Kolor " + kolor + " w cenie " + cena + " zł")
+
+        var obraz = document.createElement("img")
+        obraz.src = "pliki16/pliki16/" + nazwapliku
+        obraz.alt = nazwapliku
+        obraz.className = "miniatury"
+
+        document.querySelector("section").appendChild(obraz)
+    }
+</script>
+</html>

@@ -1,0 +1,45 @@
+body{
+    font-family: serif;
+    font-size: 120%;
+    text-align: center;
+}
+
+header{
+    float: left;
+}
+footer{
+    clear: both;
+}
+#pierwszy, aside{
+    background-color: rosybrown;
+    width: 30%;
+}
+
+#drugi{
+    background-color: rosybrown;
+    width: 70%;
+    height: 100px;
+}
+aside{
+    text-align: left;
+    height: 350px;
+    float: left;
+}
+section{
+    width: 70%;
+    height: 550px;
+    overflow: scroll;
+    float: right;
+}
+
+label{
+    line-height: 50px;
+}
+.miniatury{
+    width: 150px; 
+    transition: width 1s; 
+}
+.miniatury:hover{
+    background-color: bisque;
+    width: 200px;
+}
